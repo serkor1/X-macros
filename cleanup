@@ -1,0 +1,5 @@
+#!/bin/sh
+# Remove everything ./configure generates, so `R CMD build` ships a clean tree.
+rm -f src/Makevars
+rm -f src/ext-lib/src/*.o
+rm -rf src/ext-lib/build
